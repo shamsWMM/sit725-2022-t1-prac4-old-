@@ -1,21 +1,21 @@
 {
-  "name": "prac3",
+  "name": "prac4",
   "version": "1.0.0",
-  "description": "week 3 practical",
+  "description": "week 4 practical",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shamsWMM/sit725-2022-t1-prac3.git"
+    "url": "git+https://github.com/shamsWMM/sit725-2022-t1-prac4.git"
   },
   "author": "shams",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shamsWMM/sit725-2022-t1-prac3/issues"
+    "url": "https://github.com/shamsWMM/sit725-2022-t1-prac4/issues"
   },
-  "homepage": "https://github.com/shamsWMM/sit725-2022-t1-prac3#readme",
+  "homepage": "https://github.com/shamsWMM/sit725-2022-t1-prac4#readme",
   "dependencies": {
     "express": "^4.17.3",
     "materialize": "^1.0.0",
