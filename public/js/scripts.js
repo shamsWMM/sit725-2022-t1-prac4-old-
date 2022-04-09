@@ -1,3 +1,7 @@
+const { response } = require("express");
+
+/*
+step2
 const cardList = [
     {
         title: "Kuala 2",
@@ -11,7 +15,7 @@ const cardList = [
         link: "About Kuala 3",
         desciption: "Demo desciption about kuala 3"
     }
-]
+]*/
 const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
@@ -23,6 +27,20 @@ const submitForm = () => {
     formData.email = $('#email').val();
 
     console.log("Form Data Submitted: ", formData);
+}
+//step4
+const getProjects = () => {
+    $.get('/api/projects',(response) =>{
+        if(response.statusCode==200){
+            console.log(response);
+            addCards(response.data);
+        }
+        else{
+            console.log(response)
+        }
+    }
+
+    )
 }
 
 const addCards = (items) => {
@@ -46,6 +64,9 @@ $(document).ready(function(){
     $('#formSubmit').click(()=>{
         submitForm();
     })
-    addCards(cardList);
+    //step6
+    getProjects();
+    //step5
+    //addCards(cardList);
     $('.modal').modal();
   });
